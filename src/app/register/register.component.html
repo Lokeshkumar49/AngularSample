@@ -1,0 +1,12 @@
+<h1>Register</h1>
+
+<form [formGroup]="messageForm" (ngSubmit)="onFormSubmit(messageForm.value)">
+  <label> FirstName : <input type="text" formControlName="firstname" /> </label>
+  <br />
+  <label> LastName : <input type="text" formControlName="lastname" /> </label>
+  <br />
+  <label> Email : <input type="text" formControlName="email" /> </label> <br />
+  <label> Password : <input type="text" formControlName="password" /> </label>
+  <br />
+  <input type="submit" value="Send message" class="cta" />
+</form>

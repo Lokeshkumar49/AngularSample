@@ -1,0 +1,13 @@
+<p>user-details works!</p>
+
+<!-- <h1>{{ userss[0].firstName }}</h1> -->
+<!-- <h2>My favorite hero is: {{ userss[1].firstName }}</h2> -->
+<p>Heroes:</p>
+<ul>
+  <li *ngFor="let hero of userss">
+    {{ hero.firstName }} {{ hero.lastName }} {{ hero.email }}
+    {{ hero.password }}
+
+    <button (click)="getUser(hero.id)">get Detials</button>
+  </li>
+</ul>
